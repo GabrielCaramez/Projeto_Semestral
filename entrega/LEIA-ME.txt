@@ -1,0 +1,25 @@
+ENTREGA DO PROJETO REVESTE
+
+1. artigo-brecho-circular.pdf
+   Artigo com a visão do sistema, requisitos, histórias de usuário e
+   diagramas UML solicitados.
+
+2. programa\index.html
+   Abra este arquivo em um navegador para executar o MVP.
+
+3. slides-revealjs\index.html
+   Abra este arquivo em um navegador com internet para iniciar a apresentação
+   em Reveal.js. Use as setas do teclado para trocar os slides.
+
+Funcionalidades disponíveis no MVP:
+- catálogo com pesquisa e filtros;
+- carrinho de peças únicas;
+- finalização de pedido com Pix simulado;
+- acompanhamento de pedidos;
+- cadastro e ativação/desativação de produtos;
+- fornecedores;
+- abertura de chamados de atendimento.
+
+Os dados do protótipo são armazenados no localStorage do navegador. A
+integração real com gateway Pix, autenticação e banco de dados fica para uma
+versão de produção.

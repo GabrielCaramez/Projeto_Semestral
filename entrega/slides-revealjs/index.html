@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReVeste | Apresentação</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <style>
+    :root{--green:#164b3c;--orange:#ed8159;--mint:#e7f2ec}
+    .reveal{color:#1f2925}.reveal h1,.reveal h2,.reveal h3{color:var(--green)}
+    .reveal h1{font-size:2.4em}.reveal h2{font-size:1.7em}
+    .reveal .accent{color:var(--orange)}.reveal .eyebrow{color:var(--orange);font-size:.55em;letter-spacing:.12em;text-transform:uppercase}
+    .reveal section{height:100%;display:flex!important;flex-direction:column;justify-content:center;text-align:left;padding:0 6%}
+    .reveal section.center{text-align:center;align-items:center}
+    .reveal .lead{font-size:1.2em;color:#65736c}.reveal .note{font-size:.7em;color:#65736c}
+    .reveal ul,.reveal ol{font-size:.9em;line-height:1.6}.reveal .cards{display:flex;gap:18px}
+    .reveal .card{background:var(--mint);border-radius:14px;padding:20px;flex:1;font-size:.72em}
+    .reveal .card strong,.reveal .card span{display:block}.reveal .card strong{color:var(--green);font-size:1.2em;margin-bottom:10px}
+    .reveal .flow{background:var(--mint);border-left:7px solid var(--orange);padding:24px;font-size:.9em;line-height:1.8}
+    .reveal .stack{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:.65em}
+    .reveal .stack span{background:var(--green);color:white;border-radius:8px;padding:12px 25px;min-width:55%;text-align:center}
+  </style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+  <section class="center"><p class="eyebrow">Análise e Projeto de Sistemas</p><h1>ReVeste<span class="accent">+</span></h1><h2>Moda que circula, impacto que permanece.</h2><p class="lead">Plataforma digital para venda de roupas e calçados usados.</p><small>Projeto do semestre · 2026</small></section>
+  <section><p class="eyebrow">01 · O problema</p><h2>Como transformar descarte em oportunidade?</h2><ul><li>Lúcia quer iniciar um brechó online.</li><li>É necessário expor um catálogo confiável.</li><li>O negócio precisa controlar estoque, fornecedores e pedidos.</li><li>Clientes precisam de pagamento e atendimento.</li></ul></section>
+  <section><p class="eyebrow">02 · A solução</p><h2>Um brechó digital para a economia circular.</h2><div class="cards"><div class="card"><strong>Catálogo</strong><span>Peças únicas com filtros por categoria, tamanho e preço.</span></div><div class="card"><strong>Compra</strong><span>Carrinho, pedido e pagamento Pix no MVP.</span></div><div class="card"><strong>Gestão</strong><span>Produtos, fornecedores, estoque e atendimento.</span></div></div></section>
+  <section><p class="eyebrow">03 · MVP</p><h2>Valor entregue primeiro.</h2><ol><li>Consultar catálogo</li><li>Gerenciar carrinho</li><li>Finalizar compra com Pix</li><li>Acompanhar pedido</li><li>Gerenciar produtos e estoque</li><li>Abrir atendimento</li></ol><p class="note">Boleto, cartão, logística integrada e IA ficam para futuras evoluções.</p></section>
+  <section><p class="eyebrow">04 · Modelagem</p><h2>Principais atores e entidades</h2><div class="flow"><b>Cliente</b> → Catálogo → Carrinho → Pedido → Pagamento Pix<br><b>Administradora</b> → Produtos → Estoque → Fornecedores<br><b>Atendente</b> → Chamados → Respostas</div><p class="note">A UML orienta a comunicação e a futura implementação.</p></section>
+  <section><p class="eyebrow">05 · Arquitetura</p><h2>Componentes preparados para evoluir.</h2><div class="stack"><span>Interface Web</span><b>↓</b><span>API ReVeste</span><b>↓</b><span>Catálogo · Vendas · Atendimento · Administração</span><b>↓</b><span>Banco de dados · Imagens · Gateway Pix</span></div></section>
+  <section><p class="eyebrow">06 · Padrões</p><h2>Reuso e baixo acoplamento.</h2><div class="cards"><div class="card"><strong>Strategy</strong><span>Permite adicionar boleto e cartão sem reescrever a compra.</span></div><div class="card"><strong>Repository</strong><span>Separa regras de negócio do banco de dados.</span></div><div class="card"><strong>Observer</strong><span>Notifica cliente e equipe sobre atualizações.</span></div></div><p class="note">Também foram considerados MVC e Factory Method.</p></section>
+  <section><p class="eyebrow">07 · Resultados</p><h2>Mais que uma compra.</h2><ul><li>Redução do descarte de roupas e calçados.</li><li>Rastreabilidade do pedido e do atendimento.</li><li>Base para novos meios de pagamento e logística.</li><li>Experiência simples para cliente e administradora.</li></ul></section>
+  <section class="center"><p class="eyebrow">Obrigado!</p><h1>ReVeste<span class="accent">+</span></h1><p class="lead">Cada peça merece uma nova história.</p><small>Fontes e detalhes técnicos estão no artigo entregue em PDF.</small></section>
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>Reveal.initialize({hash:true,slideNumber:true,transition:"slide",controls:true,progress:true,center:false});</script>
+</body>
+</html>
